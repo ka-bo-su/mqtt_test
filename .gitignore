@@ -1,2 +1,2 @@
 # Ignore log files
-./logs/*
+logs/*
