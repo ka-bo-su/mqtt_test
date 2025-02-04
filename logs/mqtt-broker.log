@@ -1,0 +1,31 @@
+2025-02-04T18:08:33: mosquitto version 2.0.20 starting
+2025-02-04T18:08:33: Config loaded from /mosquitto/config/mosquitto.conf.
+2025-02-04T18:08:33: Opening ipv4 listen socket on port 1883.
+2025-02-04T18:08:33: Opening ipv6 listen socket on port 1883.
+2025-02-04T18:08:33: mosquitto version 2.0.20 running
+2025-02-04T18:08:36: New connection from 172.19.0.4:44846 on port 1883.
+2025-02-04T18:08:36: New client connected from 172.19.0.4:44846 as auto-BED7EF47-7970-5B89-B0E2-DD54E8F97219 (p2, c1, k60).
+2025-02-04T18:08:36: No will message specified.
+2025-02-04T18:08:36: Sending CONNACK to auto-BED7EF47-7970-5B89-B0E2-DD54E8F97219 (0, 0)
+2025-02-04T18:08:36: Received SUBSCRIBE from auto-BED7EF47-7970-5B89-B0E2-DD54E8F97219
+2025-02-04T18:08:36: 	test (QoS 0)
+2025-02-04T18:08:36: auto-BED7EF47-7970-5B89-B0E2-DD54E8F97219 0 test
+2025-02-04T18:08:36: Sending SUBACK to auto-BED7EF47-7970-5B89-B0E2-DD54E8F97219
+2025-02-04T18:08:37: New connection from 172.19.0.3:51532 on port 1883.
+2025-02-04T18:08:37: New client connected from 172.19.0.3:51532 as auto-0CC1C7B6-9C5F-E274-2AFE-39FC93F0398B (p2, c1, k60).
+2025-02-04T18:08:37: No will message specified.
+2025-02-04T18:08:37: Sending CONNACK to auto-0CC1C7B6-9C5F-E274-2AFE-39FC93F0398B (0, 0)
+2025-02-04T18:08:37: Received PUBLISH from auto-0CC1C7B6-9C5F-E274-2AFE-39FC93F0398B (d0, q0, r0, m0, 'test', ... (13 bytes))
+2025-02-04T18:08:37: Sending PUBLISH to auto-BED7EF47-7970-5B89-B0E2-DD54E8F97219 (d0, q0, r0, m0, 'test', ... (13 bytes))
+2025-02-04T18:08:37: Received DISCONNECT from auto-0CC1C7B6-9C5F-E274-2AFE-39FC93F0398B
+2025-02-04T18:08:37: Client auto-0CC1C7B6-9C5F-E274-2AFE-39FC93F0398B disconnected.
+2025-02-04T18:08:42: New connection from 172.19.0.3:56972 on port 1883.
+2025-02-04T18:08:42: New client connected from 172.19.0.3:56972 as auto-7EDB933D-17AD-4FA9-657B-A8B52A48D6AF (p2, c1, k60).
+2025-02-04T18:08:42: No will message specified.
+2025-02-04T18:08:42: Sending CONNACK to auto-7EDB933D-17AD-4FA9-657B-A8B52A48D6AF (0, 0)
+2025-02-04T18:08:42: Received PUBLISH from auto-7EDB933D-17AD-4FA9-657B-A8B52A48D6AF (d0, q0, r0, m0, 'test', ... (13 bytes))
+2025-02-04T18:08:42: Sending PUBLISH to auto-BED7EF47-7970-5B89-B0E2-DD54E8F97219 (d0, q0, r0, m0, 'test', ... (13 bytes))
+2025-02-04T18:08:42: Received DISCONNECT from auto-7EDB933D-17AD-4FA9-657B-A8B52A48D6AF
+2025-02-04T18:08:42: Client auto-7EDB933D-17AD-4FA9-657B-A8B52A48D6AF disconnected.
+2025-02-04T18:09:01: Client auto-BED7EF47-7970-5B89-B0E2-DD54E8F97219 closed its connection.
+2025-02-04T18:09:04: mosquitto version 2.0.20 terminating
