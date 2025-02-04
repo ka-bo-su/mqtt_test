@@ -1,9 +1,0 @@
-2025-02-04 18:08:36 Client null sending CONNECT
-2025-02-04 18:08:37 Client null received CONNACK (0)
-2025-02-04 18:08:37 Client null sending SUBSCRIBE (Mid: 1, Topic: test, QoS: 0, Options: 0x00)
-2025-02-04 18:08:37 Client null received SUBACK
-2025-02-04 18:08:37 Subscribed (mid: 1): 0
-2025-02-04 18:08:37 Client null received PUBLISH (d0, q0, r0, m0, 'test', ... (13 bytes))
-2025-02-04 18:08:37 Hello, World!
-2025-02-04 18:08:42 Client null received PUBLISH (d0, q0, r0, m0, 'test', ... (13 bytes))
-2025-02-04 18:08:42 Hello, World!

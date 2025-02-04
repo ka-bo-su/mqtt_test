@@ -1,8 +1,0 @@
-2025-02-04 18:08:37 Client null sending CONNECT
-2025-02-04 18:08:37 Client null received CONNACK (0)
-2025-02-04 18:08:37 Client null sending PUBLISH (d0, q0, r0, m1, 'test', ... (13 bytes))
-2025-02-04 18:08:37 Client null sending DISCONNECT
-2025-02-04 18:08:42 Client null sending CONNECT
-2025-02-04 18:08:42 Client null received CONNACK (0)
-2025-02-04 18:08:42 Client null sending PUBLISH (d0, q0, r0, m1, 'test', ... (13 bytes))
-2025-02-04 18:08:42 Client null sending DISCONNECT
