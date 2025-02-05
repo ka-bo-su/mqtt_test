@@ -14,9 +14,12 @@ services:
       - ./broker:/broker
     environment:
       - TZ=Europe/Paris  # timezone setting
+    networks: # for network delay setting
+      - mqtt_network
 
   mqtt-publisher:
-    image: eclipse-mosquitto
+    # image: eclipse-mosquitto
+    build: ./custom_mosquitto
     container_name: mqtt-publisher
     command: ./publisher/pub_message.sh  # run publisher script
     depends_on:
@@ -26,11 +29,16 @@ services:
       - ./publisher:/publisher  # publisher script
     environment:
       - TZ=Europe/Paris  # timezone setting
+    networks: # for network delay setting
+      - mqtt_network
+    cap_add:
+      - NET_ADMIN  # for network delay setting
 
   mqtt-subscriber:
-    image: eclipse-mosquitto
+    # image: eclipse-mosquitto
+    build: ./custom_mosquitto
     container_name: mqtt-subscriber
-    command: ./subscriber/sub_message.sh & sleep 25 && exit  # run subscriber script
+    command: ./subscriber/sub_message.sh && exit  # run subscriber script
     depends_on:
       - mqtt-broker
     volumes:
@@ -38,3 +46,10 @@ services:
       - ./subscriber:/subscriber  # subscriber script
     environment:
       - TZ=Europe/Paris  # timezone setting
+    networks: # for network delay setting
+      - mqtt_network
+    cap_add:
+      - NET_ADMIN  # for network delay setting
+
+networks:
+  mqtt_network:
